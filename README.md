@@ -42,3 +42,9 @@ We specify the command to run the script (`tourist_attraction_agent.py`).
 ```bash
 docker build -t tourist-attractions-app .
 
+### Run the docker Container
+
+```bash
+docker run -e OPENAI_API_KEY=your_openai_api_key -e GOOGLE_GENERATIVEAI_API_KEY=your_google_generativeai_api_key -e LIMEWIRE_API_KEY=your_limewire_api_key tourist-attractions-app
+
+
